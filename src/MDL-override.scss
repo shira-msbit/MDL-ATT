@@ -1,1 +1,25 @@
-@import "../node_modules/@angular-mdl/core/scss/material-design-lite";
+$color-primary-promo: #dc6c00;
+$color-primary-func: #0777be;
+$color-primary-special: #008241;
+$color-primary-second: #f8f8f8;
+
+
+$color-primary-promo-hover: #c96100;
+$color-primary-func-hover: #0563a6;
+$color-primary-special-hover: #007339;
+$color-primary-second-hover: #f0f0f0;
+
+$color-primary-promo-disabled: #d2d2d2;
+$color-primary-func-disabled: #d2d2d2;
+$color-primary-special-disabled: #d2d2d2;
+$color-primary-second-disabled: #d2d2d2;
+
+//Do check to override:
+// $button-height
+// $button-padding
+// $button-min-width
+// $button-border-radius
+
+$color-primary-func-hover:#0563a6;
+// mdl is the functional design - so overriding the MDL variables with the $color-primary-func
+$color-primary: $color-primary-func;
