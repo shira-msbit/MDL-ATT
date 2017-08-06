@@ -1,0 +1,21 @@
+@mixin buttonEvents ($main-bg-color, $hover-bg-color, $text-color){
+  // every role gets it's own properties by color
+  background-color: $main-bg-color;
+  color: $text-color;
+  &:hover {
+    background-color: $hover-bg-color;
+  }
+  &:focus:not(:active) {
+    background-color: $main-bg-color;
+  }
+  &:active {
+    background-color: $hover-bg-color;
+  }
+  &.mdl-button--colored {
+    color: $main-bg-color;
+
+    &:focus:not(:active) {
+      background-color: $main-bg-color;
+    }
+  }
+}
