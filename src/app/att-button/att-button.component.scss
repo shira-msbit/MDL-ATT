@@ -1,103 +1,39 @@
+//@import "../../../node_modules/@angular-mdl/core/scss/material-design-lite";
+@import "../../../node_modules/@angular-mdl/core/scss/mdl/button/button";
 @import "../../../src/MDL-override.scss";
-@import "../../../node_modules/@angular-mdl/core/scss/material-design-lite";
-
+@import "../../MDL-mixin.scss";
 
 :host {
   display: block;
   position: relative;
-}
-.mdl-button {
-  border-radius: 20px; //$button-border-radius
-  min-width: 0; //$button-min-width;
-  transition: none;
-  text-align: center;
-  @include typo-button();
-  &::-moz-focus-inner {
-    border: 0;
+
+  .mdl-button {
+    border-radius: $button-border-radius;
+    min-width: $button-min-width;
+    transition: none;
+    text-align: center;
+    @include typo-button();
+    line-height: $button-line-hight;
   }
 }
 
-.role-special{
-  background-color: $color-primary-special;
-  color: #ffffff;
-  &:hover {
-    background-color: $color-primary-special-hover;
-  }
-  &:focus:not(:active) {
-    background-color: $color-primary-special;
-  }
-  &:active {
-    background-color: $color-primary-special-hover;
-  }
-  &.mdl-button--colored {
-    color: $color-primary-special;
-
-    &:focus:not(:active) {
-      background-color: $color-primary-special;
-    }
-  }
-
+.role-special {
+  @include buttonEvents($button-primary-special, $button-primary-special-hover, $button-primary-text);
 }
-.role-functional{
-  background-color: $color-primary-func;
-  color: #ffffff;
-  &:hover {
-    background-color: $color-primary-func-hover;
-  }
-  &:focus:not(:active) {
-    background-color: $color-primary-func;
-  }
-  &:active {
-    background-color: $color-primary-func-hover;
-  }
-  &.mdl-button--colored {
-    color: $color-primary-func;
 
-    &:focus:not(:active) {
-      background-color: $color-primary-func;
-    }
-  }
+.role-functional {
+  @include buttonEvents($button-primary-func, $button-primary-func-hover, $button-primary-text);
 }
-.role-promo{
-  background-color: $color-primary-promo;
-  color: #ffffff;
-  &:hover {
-    background-color: $color-primary-promo-hover;
-  }
-  &:focus:not(:active) {
-    background-color: $color-primary-promo;
-  }
-  &:active {
-    background-color: $color-primary-promo-hover;
-  }
-  &.mdl-button--colored {
-    color: $color-primary-promo;
 
-    &:focus:not(:active) {
-      background-color: $color-primary-promo;
-    }
-  }
+.role-promo {
+  @include buttonEvents($button-primary-promo, $button-primary-promo-hover, $button-primary-text);
 }
-.role-second{
-  background-color: $color-primary-second;
-  color: #0568ae;
-  &:hover {
-    background-color: $color-primary-second-hover;
-  }
-  &:focus:not(:active) {
-    background-color: $color-primary-second;
-  }
-  &:active {
-    background-color: $color-primary-second-hover;
-  }
-  &.mdl-button--colored {
-    color: $color-primary-second;
 
-    &:focus:not(:active) {
-      background-color: $color-primary-second;
-    }
-  }
+.role-second {
+  @include buttonEvents($button-secondary, $button-secondary-hover, $button-secondary-text);
 }
+
+/*
 .width-pair{
   width: 50%;
 }
@@ -108,3 +44,4 @@
   width: 100%;
 }
 
+*/

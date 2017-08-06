@@ -1,25 +1,29 @@
-$color-primary-promo: #dc6c00;
 $color-primary-func: #0777be;
-$color-primary-special: #008241;
-$color-primary-second: #f8f8f8;
 
+$button-primary-promo: #dc6c00;
+$button-primary-func: #0777be;
+$button-primary-special:#008241;
+$button-secondary: #f8f8f8;
 
-$color-primary-promo-hover: #c96100;
-$color-primary-func-hover: #0563a6;
-$color-primary-special-hover: #007339;
-$color-primary-second-hover: #f0f0f0;
+$button-primary-text: #ffffff;
+$button-secondary-text: #0568ae;
 
-$color-primary-promo-disabled: #d2d2d2;
-$color-primary-func-disabled: #d2d2d2;
-$color-primary-special-disabled: #d2d2d2;
-$color-primary-second-disabled: #d2d2d2;
+$button-primary-promo-hover: #c96100;
+$button-primary-func-hover: #0563a6;
+$button-primary-special-hover: #007339;
+$button-secondary-hover: #f0f0f0;
 
+$button-primary-disabled: #d2d2d2;
+$button-login-GitHub: #4F4F4F;
+
+$button-border-radius: 20px;
+$button-min-width: 0;
+$button-line-hight: 35px;
 //Do check to override:
 // $button-height
 // $button-padding
 // $button-min-width
 // $button-border-radius
 
-$color-primary-func-hover:#0563a6;
 // mdl is the functional design - so overriding the MDL variables with the $color-primary-func
 $color-primary: $color-primary-func;
