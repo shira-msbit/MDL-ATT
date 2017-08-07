@@ -1,0 +1,88 @@
+@import "../../assets/stylesheets/att-variable";
+
+$att-btn-borderRadius: 100px;
+$att-btn-textAlign: center;
+
+$att-btn-primary-functional-color-altBlue: #087ac2;
+$att-btn-primary-functional-hover-color-altBlue: #0563a6;
+$att-btn-primary-promo-color-altOrange: #d16500;
+$att-btn-primary-promo-hover-color-altOrange: #c96100;
+
+$att-btn-primary-special-color-altGreen: #008744;
+$att-btn-primary-special-hover-color-altGreen: #007339;
+
+$att-btn-primary-special-color-altGray:#fcfcfc;
+$att-btn-primary-special-hover-color-altGray:#f0f0f0;
+
+//------------ primary functional ---------------//
+.btn-primary-functional {
+    background-color: $att-color-darkBlue;
+    background-image: linear-gradient(to bottom, $att-btn-primary-functional-color-altBlue 0%, $att-color-darkBlue 100%);
+    border-top-color: $att-btn-primary-functional-color-altBlue;
+    border-right-color: $att-btn-primary-functional-color-altBlue;
+    border-bottom-color: $att-color-darkBlue;
+    border-left-color: $att-btn-primary-functional-color-altBlue;
+    color: $att-color-white;
+}
+
+.btn-primary-functional:hover {
+  background-color: $att-btn-primary-promo-hover-color-altOrange;
+  border-color: $att-btn-primary-promo-hover-color-altOrange;
+  color: $att-color-white;
+}
+
+
+//------------ primary promo ---------------//
+.btn-primary-promo {
+    background-color: $att-btn-primary-promo-color-altOrange;
+    background-image: linear-gradient(to bottom, $att-color-orange 0%, $att-btn-primary-promo-color-altOrange 100%);
+    color: $att-color-white;
+}
+
+.btn-primary-promo:hover {
+    background-color: $att-btn-primary-promo-hover-color-altOrange;
+    border-color: $att-btn-primary-promo-hover-color-altOrange;
+    color: $att-color-white;
+}
+
+//------------ primary special ---------------//
+.btn-primary-special {
+    background-color: $att-color-functionalGreen;
+    background-image: linear-gradient(to bottom, $att-btn-primary-special-color-altGreen 0%, $att-color-functionalGreen 100%);
+    border-top-color: $att-btn-primary-special-color-altGreen;
+    border-right-color: $att-btn-primary-special-color-altGreen;
+    border-bottom-color: $att-color-functionalGreen;
+    border-left-color: $att-btn-primary-special-color-altGreen;
+    color: $att-color-white;
+}
+
+.btn-primary-special:hover{
+    background-color: $att-btn-primary-special-hover-color-altGreen;
+    border-color: $att-btn-primary-special-hover-color-altGreen;
+    color: $att-color-white;
+}
+
+
+//------------ Secondary buttons ---------------//
+
+.btn-secondary {
+    background-color: $att-color-functionalBackgroundGray;
+    background-image: linear-gradient(to bottom, $att-btn-primary-special-color-altGray 0%, $att-color-functionalBackgroundGray 100%);
+    box-shadow: inset 0 0 0 1px $att-color-lightGray, 0 5px 5px -5px $att-color-functionalBlack;
+    color: $att-color-darkBlue;
+}
+
+.btn-secondary:hover {
+    color: $att-color-darkBlue;
+    background: $att-btn-primary-special-hover-color-altGray;
+}
+
+//------------ Hollow buttons ---------------//
+
+.btn-hollow {
+    background-color: transparent;
+    .btn-hollow-att-blue{
+        border-color: $att-color-blue;
+        color: $att-color-blue;
+    }
+}
