@@ -1,4 +1,4 @@
-@import "../node_modules/@angular-mdl/core/scss/mixins";
+// hold the att specific mixin per component - att-button
 
 @mixin buttonEvents ($main-bg-color, $hover-bg-color, $text-color){
   // every role gets it's own properties by color

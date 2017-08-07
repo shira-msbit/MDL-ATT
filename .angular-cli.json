@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "",
       "styles": [
-        "att-mdl-override.scss"
+        "assets/stylesheets/att-style.scss"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",

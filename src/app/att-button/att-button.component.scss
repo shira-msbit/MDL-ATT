@@ -1,54 +1,108 @@
 //@import "../../../node_modules/@angular-mdl/core/scss/material-design-lite";
 //@import "../../../node_modules/@angular-mdl/core/scss/mdl/button/button";
-@import "../../att-partial";
-@import "att-button.scss";
+//@import "../../att-partial";
+//@import "att-button.scss";
 
+// holds the necceery styling for att-button
+@import "mdl-button-override";
 
+/* **************     reset hard-codded mdl vars      ************************ */
 :host {
   display: block;
   position: relative;
 }
-
 .mdl-button {
   display: block;
   border-radius: $button-border-radius;
-  min-width: $button-min-width;
-  height: 2rem;
-  width:100%;
-  transition: none;
-  text-align: center;
-  @include typo-button();
-  line-height: $button-line-hight;
-  [class*="icon-"]{
-    color:$button-primary-text;
-  }
+  text-align:$att-btn-textAlign;
+  width:100%; //default value
 }
 
-.role-special {
-  @include buttonEvents($button-primary-special, $button-primary-special-hover, $button-primary-text);
-}
 
-.role-functional {
-  @include buttonEvents($button-primary-func, $button-primary-func-hover, $button-primary-text);
+/* **************     component styling      ************************ */
+[class*="icon-"]{
+  color:#ffffff;
+  line-height: 1rem;
 }
-
-.role-promo {
-  @include buttonEvents($button-primary-promo, $button-primary-promo-hover, $button-primary-text);
-}
-
-.role-second {
-  @include buttonEvents($button-secondary, $button-secondary-hover, $button-secondary-text);
-}
-
-/*
-.width-pair{
+.width-role-pair{
   width: 50%;
 }
-.width-fit{
+.width-role-fit{
   width: auto;
 }
-.width-strech{
+.width-role-strech{
   width: 100%;
 }
 
-*/
+.btn-primary-functional {
+  background-color: $att-color-darkBlue;
+  background-image: linear-gradient(to bottom, $att-btn-primary-functional-color-altBlue 0%, $att-color-darkBlue 100%);
+  border-top-color: $att-btn-primary-functional-color-altBlue;
+  border-right-color: $att-btn-primary-functional-color-altBlue;
+  border-bottom-color: $att-color-darkBlue;
+  border-left-color: $att-btn-primary-functional-color-altBlue;
+  color: $att-color-white;
+}
+
+.btn-primary-functional:hover {
+  background-image:none;
+  background-color: $att-btn-primary-functional-hover-color-altBlue;
+  border-color: $att-btn-primary-functional-hover-color-altBlue;
+  color: $att-color-white;
+}
+
+
+//------------ primary promo ---------------//
+.btn-primary-promo {
+  background-color: $att-btn-primary-promo-color-altOrange;
+  background-image: linear-gradient(to bottom, $att-color-orange 0%, $att-btn-primary-promo-color-altOrange 100%);
+  color: $att-color-white;
+}
+
+.btn-primary-promo:hover {
+  background-color: $att-btn-primary-promo-hover-color-altOrange;
+  border-color: $att-btn-primary-promo-hover-color-altOrange;
+  color: $att-color-white;
+}
+
+//------------ primary special ---------------//
+.btn-primary-special {
+  background-color: $att-color-functionalGreen;
+  background-image: linear-gradient(to bottom, $att-btn-primary-special-color-altGreen 0%, $att-color-functionalGreen 100%);
+  border-top-color: $att-btn-primary-special-color-altGreen;
+  border-right-color: $att-btn-primary-special-color-altGreen;
+  border-bottom-color: $att-color-functionalGreen;
+  border-left-color: $att-btn-primary-special-color-altGreen;
+  color: $att-color-white;
+}
+
+.btn-primary-special:hover{
+  background-color: $att-btn-primary-special-hover-color-altGreen;
+  border-color: $att-btn-primary-special-hover-color-altGreen;
+  color: $att-color-white;
+}
+
+
+//------------ Secondary buttons ---------------//
+
+.btn-secondary {
+  background-color: $att-color-functionalBackgroundGray;
+  background-image: linear-gradient(to bottom, $att-btn-primary-special-color-altGray 0%, $att-color-functionalBackgroundGray 100%);
+  box-shadow: inset 0 0 0 1px $att-color-lightGray, 0 5px 5px -5px $att-color-functionalBlack;
+  color: $att-color-darkBlue;
+}
+
+.btn-secondary:hover {
+  color: $att-color-darkBlue;
+  background: $att-btn-primary-special-hover-color-altGray;
+}
+
+//------------ Hollow buttons ---------------//
+
+.btn-hollow {
+  background-color: transparent;
+  .btn-hollow-att-blue{
+    border-color: $att-color-blue;
+    color: $att-color-blue;
+  }
+}

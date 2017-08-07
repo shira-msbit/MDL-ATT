@@ -1,3 +1,6 @@
-@import "att-mixin";
-@import "att-variables";
+//@import "app/att-button/att-mixin";
+@import "mdl-variables-override";
 @import "../node_modules/@angular-mdl/core/scss/material-design-lite";
+@import "assets/stylesheets/att-variable";
+
+
