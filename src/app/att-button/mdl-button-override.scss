@@ -1,7 +1,7 @@
-// holds the override vars/ mixin related to angular mdl
-// vars: will override the mdl vars for buttons to att-vars
-// mixin: will override the mdl mixin for buttons to att-vars
-
+/*holds the override vars/ mixin related to angular mdl
+*vars: will override the mdl vars for buttons to att-vars
+*mixin: will override the mdl mixin for buttons to att-vars
+*/
 @import "../../../node_modules/@angular-mdl/core/scss/mdl/button/button";
 @import "att-button-vars";
 @import "att-button-mixin";
