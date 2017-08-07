@@ -1,19 +1,26 @@
 //@import "../../../node_modules/@angular-mdl/core/scss/material-design-lite";
-@import "../../../node_modules/@angular-mdl/core/scss/mdl/button/button";
-@import "../../../src/MDL-override.scss";
-@import "../../MDL-mixin.scss";
+//@import "../../../node_modules/@angular-mdl/core/scss/mdl/button/button";
+@import "../../att-partial";
+@import "att-button.scss";
+
 
 :host {
   display: block;
   position: relative;
+}
 
-  .mdl-button {
-    border-radius: $button-border-radius;
-    min-width: $button-min-width;
-    transition: none;
-    text-align: center;
-    @include typo-button();
-    line-height: $button-line-hight;
+.mdl-button {
+  display: block;
+  border-radius: $button-border-radius;
+  min-width: $button-min-width;
+  height: 2rem;
+  width:100%;
+  transition: none;
+  text-align: center;
+  @include typo-button();
+  line-height: $button-line-hight;
+  [class*="icon-"]{
+    color:$button-primary-text;
   }
 }
 

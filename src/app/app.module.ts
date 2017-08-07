@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {MdlModule} from '@angular-mdl/core';
 import { AttButtonComponent } from './att-button/att-button.component';
+import { AttDropdownComponent } from './att-dropdown/att-dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AttButtonComponent
+    AttButtonComponent,
+    AttDropdownComponent
   ],
   imports: [
     BrowserModule,

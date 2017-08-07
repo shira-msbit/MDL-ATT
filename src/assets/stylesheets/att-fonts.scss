@@ -1,0 +1,16 @@
+//Typography
+@import "att-variable";
+
+$default-font-family: omnes-regular;
+$default-font-size: 16px;
+$default-font-color: $att-color-functionalBlack;
+
+
+@mixin att-font(){
+  font-size: $default-font-size;
+  font-family: $default-font-family;
+  color: $default-font-color;
+  font-weight: normal;
+}
+
+
